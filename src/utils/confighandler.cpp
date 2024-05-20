@@ -121,10 +121,12 @@ static QMap<class QString, QSharedPointer<ValueHandler>>
     OPTION("predefinedColorPaletteLarge", Bool               ( PREDEFINED_COLOR_PALETTE_LARGE )),
     // NOTE: If another tool size is added besides drawThickness and
     // drawFontSize, remember to update ConfigHandler::toolSize
-    OPTION("copyOnDoubleClick"           ,Bool               ( false         )),
-    OPTION("uploadClientSecret"          ,String             ( "313baf0c7b4d3ff"            )),
-    OPTION("showSelectionGeometry"  , BoundedInt               (0,5,4)),
-    OPTION("showSelectionGeometryHideTime", LowerBoundedInt       (0, 3000)),
+    OPTION("copyOnDoubleClick"            ,Bool               ( false         )),
+    OPTION("imgUploaderPlugin"            ,String             ( "imgur"       )),
+    OPTION("uploadClientSecret"           ,String             ( "313baf0c7b4d3ff")),
+    OPTION("catboxUserHash"               ,String             ( "enter-hash")),
+    OPTION("showSelectionGeometry"        ,BoundedInt         ( 0, 5, 4       )),
+    OPTION("showSelectionGeometryHideTime",LowerBoundedInt    ( 0, 3000       )),
     OPTION("jpegQuality", BoundedInt     (0,100,75))
 };
 
